@@ -1,11 +1,9 @@
-import React from "react";
-
-import { useState } from "react";
+import { FC, useState } from "react";
 
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../static_data/static_data";
 
-const Navbar = () => {
+const Navbar: FC = () => {
 	const [navToggle, setNavToggle] = useState(false);
 
 	return (
